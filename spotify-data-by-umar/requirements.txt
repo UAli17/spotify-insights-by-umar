@@ -1,3 +1,0 @@
-requests==2.31.0
-json==2.0.9
-pyspark==3.5.0
