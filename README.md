@@ -1,51 +1,88 @@
-# 🎧 Spotify Listening Insights – Umar Ali
+# 🎧 Spotify Data Analysis – Umar Ali
 
-This project dives into Spotify playlist data using the Spotify Web API, PySpark, and Power BI. The objective is to uncover trends in music listening behavior—such as artist popularity, track energy, and genre distribution—while demonstrating data engineering and analytics skills in a modern stack.
+This project demonstrates how to extract, transform, analyze, and visualize Spotify playlist data using modern data engineering tools. Built in Azure Databricks with PySpark and SparkSQL, the data pipeline leverages the Spotify Web API to extract track metadata and audio features, which are then transformed and stored as Delta Tables. Insights are visualized in Power BI to uncover patterns in music behavior and preferences.
 
 ---
 
-## 🔍 Project Highlights
+## 📌 Key Features
 
-- 🔌 **Data Extraction** from Spotify's API (tracks, albums, audio features)
-- 🧹 **Data Processing** using PySpark in Databricks
-- 🧠 **Feature Engineering** for track popularity, energy levels, and artist analysis
-- 📊 **Visual Insights** via Power BI dashboard and SQL queries
-- 🧰 **Delta Table Creation** and partitioning for efficient querying
+- 🔌 **Spotify API Integration** – Extracts playlist, track, album, and audio feature data
+- 🧹 **ETL Pipeline in Databricks** – PySpark, SparkSQL, and Delta Lake for transformation
+- 📊 **Interactive Visualizations** – Power BI dashboards with multi-layered insights
+- 🧠 **Analytical Outputs**:
+  - Top 5 longest albums
+  - Album popularity distribution
+  - Energy level classification
+  - Tracks per musical key
+  - Track recommendations
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Layer           | Tools Used                          |
-|----------------|--------------------------------------|
-| API Integration| Spotify Web API                      |
-| Processing     | PySpark, Databricks                  |
-| Storage        | Delta Tables, SQL                    |
-| Analysis       | Python, SQL                          |
-| Visualization  | Power BI                             |
-| Version Control| Git & GitHub                         |
+| Layer         | Tools/Services                     |
+|---------------|------------------------------------|
+| API           | Spotify Web API                    |
+| Data Platform | Azure Databricks (PySpark, SparkSQL)|
+| Storage       | Delta Tables                       |
+| Visualization | Power BI                           |
+| Language      | Python                             |
+| Version Control | Git & GitHub                    |
 
 ---
 
 ## 🧪 Getting Started
 
-1. **Clone this repo**  
-   ```bash
-   git clone https://github.com/UAli17/spotify-insights-by-umar.git
-   cd spotify-insights-by-umar
+### ✅ Prerequisites
 
-2. **Install Python Packages**  
-   ```bash
-   pip install -r requirements.txt
+- Azure Databricks account
+- Spotify Developer account
+- Power BI Desktop
+- Python 3.x
+- Required packages: `requests`, `pyspark`, `json`
 
-3. **Get Spotify API Credentials**  
-   Go to Spotify Developer Dashboard
-   Create an app to get your Client ID and Client Secret
+---
 
-4. **Replace the Playlist ID**  
-   Open spotify-data-analysis.ipynb in /src/
-   Insert your desired playlist ID where prompted
+### 🔧 Installation & Setup
 
-5. Run the notebook in Databricks or a local PySpark environment
+1. **Clone the Repository**
+```bash
+git clone https://github.com/UAli17/spotify-insights-by-umar.git
+cd spotify-insights-by-umar
 
+2. **Install Python Dependencies**
+pip install -r requirements.txt
 
+3. **Get Spotify Credentials**
+Go to the Spotify Developer Dashboard
+Create an app to get your:
+CLIENT_ID
+CLIENT_SECRET
+
+4. **Configure Secrets in Databricks**
+Use Databricks Secret Scopes:
+SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret
+
+5. **Upload and Run the notebook**
+Open spotify-data-analysis.ipynb inside /src/ in Databricks
+Replace the default playlist ID with your own
+Run the notebook to generate data tables
+
+📊 Power BI Dashboard
+The final results are visualized in Power BI. The report includes:
+
+🎵 Top 5 Longest Albums – by total track duration
+
+📈 Album Popularity – based on Spotify’s popularity score
+
+⚡ Energy Distribution – categorized into energetic levels
+
+🎹 Tracks per Audio Key – musical key frequency
+
+🤖 Recommended Tracks – generated using the Spotify recommendation API
+
+👤 About the Author
+Umar Ali
+Data Engineer | Python & SQL | Analytics & Automation
+🔗 LinkedIn • 📫 U_ali17@outlook.com
