@@ -33,3 +33,19 @@ This project dives into Spotify playlist data using the Spotify Web API, PySpark
    ```bash
    git clone https://github.com/UAli17/spotify-insights-by-umar.git
    cd spotify-insights-by-umar
+
+2. **Install Python Packages**  
+   ```bash
+   pip install -r requirements.txt
+
+3. **Get Spotify API Credentials**  
+   Go to Spotify Developer Dashboard
+   Create an app to get your Client ID and Client Secret
+
+4. **Replace the Playlist ID**  
+   Open spotify-data-analysis.ipynb in /src/
+   Insert your desired playlist ID where prompted
+
+5. Run the notebook in Databricks or a local PySpark environment
+
+
