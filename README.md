@@ -1,36 +1,35 @@
 # 🎧 Spotify Listening Insights – Umar Ali
 
-This project explores Spotify listening trends by extracting real-world playlist data through the Spotify Web API and performing data analysis in Python. The goal is to uncover insights into genres, popularity, artist behavior, and release patterns, while showcasing practical data engineering and analytics skills.
+This project dives into Spotify playlist data using the Spotify Web API, PySpark, and Power BI. The objective is to uncover trends in music listening behavior—such as artist popularity, track energy, and genre distribution—while demonstrating data engineering and analytics skills in a modern stack.
 
 ---
 
-## 📌 Key Features
+## 🔍 Project Highlights
 
-- 🔌 **Data Extraction** using the Spotify API
-- 🧹 **Data Cleaning & Transformation** with Pandas
-- 📊 **Exploratory Data Analysis (EDA)** with Seaborn and Matplotlib
-- 🧠 **Custom Insights** on track popularity, artist frequency, release trends, and more
-- 📸 **Power BI Dashboard** (visual summary of results)
-
----
-
-## 🚀 Tools & Tech Stack
-
-- Python (Pandas, NumPy, Seaborn, Matplotlib)
-- Spotify Web API
-- Jupyter Notebook
-- Power BI (Dashboard Preview)
-- Git & GitHub
+- 🔌 **Data Extraction** from Spotify's API (tracks, albums, audio features)
+- 🧹 **Data Processing** using PySpark in Databricks
+- 🧠 **Feature Engineering** for track popularity, energy levels, and artist analysis
+- 📊 **Visual Insights** via Power BI dashboard and SQL queries
+- 🧰 **Delta Table Creation** and partitioning for efficient querying
 
 ---
 
-## 🧪 How to Use
+## ⚙️ Tech Stack
 
-1. Clone or download this repo
-2. Get your Spotify API credentials [here](https://developer.spotify.com/dashboard/)
-3. Replace the playlist ID in the notebook with your own
-4. Run the notebook to extract, analyze, and visualize your listening data
+| Layer           | Tools Used                          |
+|----------------|--------------------------------------|
+| API Integration| Spotify Web API                      |
+| Processing     | PySpark, Databricks                  |
+| Storage        | Delta Tables, SQL                    |
+| Analysis       | Python, SQL                          |
+| Visualization  | Power BI                             |
+| Version Control| Git & GitHub                         |
 
-> Don't forget to install required libraries from `requirements.txt`:
-```bash
-pip install -r requirements.txt
+---
+
+## 🧪 Getting Started
+
+1. **Clone this repo**  
+   ```bash
+   git clone https://github.com/UAli17/spotify-insights-by-umar.git
+   cd spotify-insights-by-umar
